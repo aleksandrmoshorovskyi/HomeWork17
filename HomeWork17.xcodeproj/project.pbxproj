@@ -23,7 +23,6 @@
 		A8C87AB22BD40AE700D1D303 /* SectionAdapterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AAB2BD40AE700D1D303 /* SectionAdapterInput.swift */; };
 		A8C87AB32BD40AE700D1D303 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AAD2BD40AE700D1D303 /* TableViewAdapter.swift */; };
 		A8C87AB42BD40AE700D1D303 /* TableViewAdapterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AAE2BD40AE700D1D303 /* TableViewAdapterInput.swift */; };
-		A8C87AB82BD40BDA00D1D303 /* SettingsCellDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AB72BD40BDA00D1D303 /* SettingsCellDisplayModel.swift */; };
 		A8C87ABA2BD40C2C00D1D303 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AB92BD40C2C00D1D303 /* SettingsCell.swift */; };
 		A8C87ABC2BD40C3700D1D303 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C87ABB2BD40C3700D1D303 /* SettingsCell.xib */; };
 		A8C87ABE2BD40D4300D1D303 /* SettingsSectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87ABD2BD40D4300D1D303 /* SettingsSectionAdapter.swift */; };
@@ -32,6 +31,7 @@
 		A8C87AC52BD4116000D1D303 /* BuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C87AC42BD4116000D1D303 /* BuyCell.xib */; };
 		A8C87AC72BD4124100D1D303 /* BuySectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AC62BD4124100D1D303 /* BuySectionAdapter.swift */; };
 		A8C87AC92BD4147D00D1D303 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87AC82BD4147D00D1D303 /* ViewController+Ext.swift */; };
+		A8C87AD02BD421BA00D1D303 /* SettingsCellDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C87ACF2BD421BA00D1D303 /* SettingsCellDisplayModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		A8C87AAB2BD40AE700D1D303 /* SectionAdapterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionAdapterInput.swift; sourceTree = "<group>"; };
 		A8C87AAD2BD40AE700D1D303 /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
 		A8C87AAE2BD40AE700D1D303 /* TableViewAdapterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAdapterInput.swift; sourceTree = "<group>"; };
-		A8C87AB72BD40BDA00D1D303 /* SettingsCellDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsCellDisplayModel.swift; path = HomeWork17/HomeWork17/SettingsCellDisplayModel.swift; sourceTree = SOURCE_ROOT; };
 		A8C87AB92BD40C2C00D1D303 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		A8C87ABB2BD40C3700D1D303 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		A8C87ABD2BD40D4300D1D303 /* SettingsSectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSectionAdapter.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		A8C87AC42BD4116000D1D303 /* BuyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyCell.xib; sourceTree = "<group>"; };
 		A8C87AC62BD4124100D1D303 /* BuySectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySectionAdapter.swift; sourceTree = "<group>"; };
 		A8C87AC82BD4147D00D1D303 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		A8C87ACF2BD421BA00D1D303 /* SettingsCellDisplayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCellDisplayModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +170,7 @@
 			children = (
 				A8C87ABB2BD40C3700D1D303 /* SettingsCell.xib */,
 				A8C87AB92BD40C2C00D1D303 /* SettingsCell.swift */,
-				A8C87AB72BD40BDA00D1D303 /* SettingsCellDisplayModel.swift */,
+				A8C87ACF2BD421BA00D1D303 /* SettingsCellDisplayModel.swift */,
 			);
 			path = SettingsCell;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 				A8C87A7B2BD400CE00D1D303 /* ViewController.swift in Sources */,
 				A8C87AB42BD40AE700D1D303 /* TableViewAdapterInput.swift in Sources */,
 				A8C87AC72BD4124100D1D303 /* BuySectionAdapter.swift in Sources */,
+				A8C87AD02BD421BA00D1D303 /* SettingsCellDisplayModel.swift in Sources */,
 				A8C87AB22BD40AE700D1D303 /* SectionAdapterInput.swift in Sources */,
 				A8C87AB32BD40AE700D1D303 /* TableViewAdapter.swift in Sources */,
-				A8C87AB82BD40BDA00D1D303 /* SettingsCellDisplayModel.swift in Sources */,
 				A8C87AB02BD40AE700D1D303 /* CellAdapterInput.swift in Sources */,
 				A8C87AA62BD4079200D1D303 /* TitleSectionAdapter.swift in Sources */,
 				A8C87AB12BD40AE700D1D303 /* CellsSetSectionAdapter.swift in Sources */,
