@@ -29,8 +29,8 @@ extension TitleSectionAdapter: SectionAdapterInput {
     
     func registerCells(in tableView: UITableView) {
         
-        let nib = UINib(nibName: "TitleCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "TitleCell")
+        let nib = UINib(nibName: TitleCell.idintifier, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: TitleCell.idintifier)
     }
     
     func numberOfRows(for section: Int, in tableView: UITableView) -> Int {
@@ -40,7 +40,7 @@ extension TitleSectionAdapter: SectionAdapterInput {
     
     func cellForRow(at indexPath: IndexPath, in tableView: UITableView) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as? TitleCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleCell.idintifier, for: indexPath) as? TitleCell
         else {
             assertionFailure()
             return UITableViewCell()

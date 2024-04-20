@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="as9-aK-Am0" customClass="SettingsCell" customModule="HomeWork17" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="as9-aK-Am0" id="wmM-3r-Iop">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQG-lo-DgS">
+                        <rect key="frame" x="20" y="11.666666666666664" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADs-Uh-e0H">
+                        <rect key="frame" x="324" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                        <connections>
+                            <action selector="switchAction:" destination="as9-aK-Am0" eventType="valueChanged" id="dIH-vs-rnc"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sQG-lo-DgS" firstAttribute="centerY" secondItem="wmM-3r-Iop" secondAttribute="centerY" id="79D-0p-aoM"/>
+                    <constraint firstItem="ADs-Uh-e0H" firstAttribute="centerY" secondItem="wmM-3r-Iop" secondAttribute="centerY" id="aNd-2p-V6H"/>
+                    <constraint firstAttribute="trailing" secondItem="ADs-Uh-e0H" secondAttribute="trailing" constant="20" symbolic="YES" id="eTh-uZ-nl2"/>
+                    <constraint firstItem="sQG-lo-DgS" firstAttribute="leading" secondItem="wmM-3r-Iop" secondAttribute="leading" constant="20" symbolic="YES" id="sh4-8n-Wbw"/>
+                    <constraint firstItem="ADs-Uh-e0H" firstAttribute="leading" relation="lessThanOrEqual" secondItem="sQG-lo-DgS" secondAttribute="trailing" constant="262" id="weY-TV-mZp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="switcher" destination="ADs-Uh-e0H" id="r0f-09-na3"/>
+                <outlet property="titleTextLable" destination="sQG-lo-DgS" id="Z25-Op-kQJ"/>
+            </connections>
+            <point key="canvasLocation" x="11" y="-35"/>
+        </tableViewCell>
+    </objects>
+</document>

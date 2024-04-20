@@ -9,6 +9,8 @@ import UIKit
 
 class TitleCell: UITableViewCell {
     
+    static let idintifier = "TitleCell"
+    
     var goCompletion: (() -> ())?
     
     @IBOutlet weak var titleTextLable: UILabel!
@@ -23,6 +25,6 @@ class TitleCell: UITableViewCell {
     func setup(with model: TitleCellDisplayModel) {
         
         titleTextLable.text = model.titleText
-        imgView.image = UIImage(systemName: "")
+        imgView.image = UIImage(systemName: model.img)
     }
 }

@@ -43,11 +43,22 @@ extension TableViewAdapter: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return sections[indexPath.section].heightForRow(at: indexPath, in: tableView)
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section \(section == 2 ? 3 : section)" //like TableAdapterScreen.png :)))
+    }
 }
 
 extension TableViewAdapter: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        sections[indexPath.section].didSelectRow(at: indexPath, in: tableView)
+        
+        //print("did selected: \(indexPath.section) \(indexPath.row)")
+        
+        return sections[indexPath.section].didSelectRow(at: indexPath, in: tableView)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44.0
     }
 }
